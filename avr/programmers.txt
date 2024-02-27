@@ -1,0 +1,7 @@
+arduino_ft232r.name=[DLitz] arduino-ft232r
+arduino_ft232r.communication=usb
+arduino_ft232r.protocol=arduino-ft232r
+arduino_ft232r.program.protocol=arduino-ft232r
+arduino_ft232r.program.tool=avrdude
+arduino_ft232r.program.tool.default=avrdude
+arduino_ft232r.program.extra_params=-Pusb

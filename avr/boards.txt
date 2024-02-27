@@ -1,0 +1,27 @@
+pwmfanctl.name=[DLitz] PWM Fan Controller (ATmega328p @ 20 MHz)
+pwmfanctl.upload.protocol=arduino
+pwmfanctl.upload.maximum_size=32256
+pwmfanctl.upload.speed=115200
+pwmfanctl.upload.tool = avrdude
+pwmfanctl.upload.default = avrdude
+pwmfanctl.build.board=AVR_DLITZ_PWMFANCTL
+#pwmfanctl.build.board=AVR_UNO
+pwmfanctl.build.mcu=atmega328p
+pwmfanctl.build.f_cpu=20000000L
+pwmfanctl.build.core=arduino:arduino
+pwmfanctl.build.variant=arduino:standard
+pwmfanctl.bootloader.low_fuses=0xff
+pwmfanctl.bootloader.high_fuses=0xde
+pwmfanctl.bootloader.extended_fuses=0xfd
+pwmfanctl.bootloader.path=optiboot
+#pwmfanctl.bootloader.unlock_bits=0x3F
+pwmfanctl.bootloader.unlock_bits=0xFF
+#pwmfanctl.bootloader.lock_bits=0x0F
+pwmfanctl.bootloader.lock_bits=0xCF
+pwmfanctl.bootloader.tool=avrdude
+pwmfanctl.bootloader.tool.default=avrdude
+pwmfanctl.bootloader.file=optiboot/optiboot_20MHz_atmega328.hex
+pwmfanctl.bootloader.programmer.default=arduino_ft232r
+# Use the system avrdude, because the bundled one doesn't support libftdi
+pwmfanctl.tools.avrdude.cmd.path=/usr/bin/avrdude
+pwmfanctl.tools.avrdude.config.path=/etc/avrdude.conf
